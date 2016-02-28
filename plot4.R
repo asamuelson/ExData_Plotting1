@@ -13,7 +13,7 @@ plot(Times, ElectricPowerData$Sub_metering_1, xlab="", ylab="Energy sub metering
 lines(Times, ElectricPowerData$Sub_metering_1, col="black")
 lines(Times, ElectricPowerData$Sub_metering_2, col="red")
 lines(Times, ElectricPowerData$Sub_metering_3, col="blue")
-legend("topright", legend = c("Sub_metering_1", "Sub_metering_2", "Sub_metering_3"), box.col = "white", lty = 1, col=c("black", "red", "blue"))
+legend("topright", legend = c("Sub_metering_1", "Sub_metering_2", "Sub_metering_3"), bty = "n", lty = 1, col=c("black", "red", "blue"))
 
 plot(Times, ElectricPowerData$Global_reactive_power, xlab = "datetime", ylab="Global_reactive_power", type="n")
 lines(Times, ElectricPowerData$Global_reactive_power)
